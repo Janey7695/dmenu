@@ -10,13 +10,21 @@ static const char *fonts[] = {
 	"monospace:size=10"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
+//static const char col_eva1_Norm[] 	= "#66007A";
+//static const char col_eva1_Sel[] 	= "#2FCB08";
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel] = { "#eeeeee", "#005577" },
+	[SchemeNorm] = { "#bbbbbb", "#66007A" },
+	[SchemeSel] = { "#eeeeee", "#2fcb08" },
 	[SchemeSelHighlight] = { "#ffc978", "#005577" },
-	[SchemeNormHighlight] = { "#ffc978", "#222222" },
+	[SchemeNormHighlight] = { "#ffc978", "#660079" },
 	[SchemeOut] = { "#000000", "#00ffff" },
+	//[SchemeNorm] = { "#bbbbbb", "#222222" },
+	//[SchemeSel] = { "#eeeeee", "#005577" },
+	//[SchemeSelHighlight] = { "#ffc978", "#005577" },
+	//[SchemeNormHighlight] = { "#ffc978", "#222222" },
+	//[SchemeOut] = { "#000000", "#00ffff" },
+
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 7;
